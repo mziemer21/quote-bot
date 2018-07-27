@@ -1,0 +1,26 @@
+{
+  "name": "quote-bot",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://mziemer21.github.io/quote-bot",
+  "dependencies": {
+    "antd": "^3.7.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "start": "react-scripts start",
+    "start-secure": "HTTPS=true yarn start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "source-map-explorer": "^1.5.0"
+  }
+}
